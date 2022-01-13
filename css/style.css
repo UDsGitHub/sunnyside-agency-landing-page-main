@@ -528,18 +528,19 @@ footer {
 }
 
 .footer__link,
-.social-link-svg {
+.social-link {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.footer__link:hover {
+.footer__link:hover, .footer__link:focus {
   -webkit-transform: translate(2px, -5px);
           transform: translate(2px, -5px);
 }
 
-.footer__link:hover .social-link-svg {
-  fill: white;
+.footer__link:hover .social-link, .footer__link:focus .social-link {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 
 .footer__attribution {

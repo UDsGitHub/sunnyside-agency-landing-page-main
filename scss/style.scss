@@ -413,16 +413,17 @@ footer {
 }
 
 .footer__link,
-.social-link-svg {
+.social-link {
   transition: 0.3s;
 }
 
-.footer__link:hover {
-  transform: translate(2px, -5px);
-}
-
-.footer__link:hover .social-link-svg {
-  fill: white;
+.footer__link {
+  &:hover, &:focus {
+    transform: translate(2px, -5px);
+    .social-link {
+      filter: brightness(0) invert(1);
+    }
+  }
 }
 
 .footer__attribution {
