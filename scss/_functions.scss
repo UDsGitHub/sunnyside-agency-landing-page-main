@@ -8,11 +8,3 @@
         @return $Dark-desaturated-cyan;
     }
 }
-
-@function set-contact-bg($state){
-    @if($state == 'active'){
-        @return $Yellow;
-    } @else{
-        @return white;
-    }
-}

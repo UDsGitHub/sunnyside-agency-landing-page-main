@@ -1,9 +1,9 @@
 const hamburgerMenu = document.querySelector(".hamburger-menu");
-const hiddenMenu = document.querySelector(".navbar__hidden-menu");
+const navMenu = document.querySelector(".nav__ul");
 
 hamburgerMenu.addEventListener("click", handleHamburgerClick);
 
 function handleHamburgerClick(e) {
   hamburgerMenu.classList.toggle("active");
-  hiddenMenu.classList.toggle("active");
+  navMenu.classList.toggle("active");
 }
