@@ -1,0 +1,18 @@
+// Unfortunately, there is only one function here cuz 
+// i could not think of any others to create
+
+@function set-psuedo-elem-color($bg) {
+    @if($bg == blue){
+        @return white;
+    } @else{
+        @return $Dark-desaturated-cyan;
+    }
+}
+
+@function set-contact-bg($state){
+    @if($state == 'active'){
+        @return $Yellow;
+    } @else{
+        @return white;
+    }
+}
